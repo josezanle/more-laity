@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 18em;
+    height: 32em;
+    border: .5em solid black;
+    border-radius: 1em;
+    padding: .4em;
+    background-image: linear-gradient(to bottom, rgb(6, 19, 22), rgba(223, 231, 236, 0.1)), url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1.5em 3em .7em silver;
+}
+
+
+/*top icons, time,signal,wifi,battery state*/
+
+.top {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+    font-size: .8em;
+}
+
+.top .left {
+    flex: 1;
+}
+
+.top .left {
+    flex: 9;
+}
+
+
+/*middle section...contain...h3,icon,and paragraph*/
+
+.mid {
+    flex: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+
+.card .mid i {
+    font-size: 4em;
+}
+
+.card .mid h3 {
+    margin: .3em 0;
+}
+
+.card .mid p {
+    font-size: .6em;
+    letter-spacing: .2em;
+}
+
+
+/*bottom section..*/
+
+.card2.bottom {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background: #000;
+    font-size: .6em;
+    padding: .7em 1.5em;
+    border-radius: .5em;
+    box-shadow: 3px 3px 5px rgb(43, 33, 33);
+    outline: none;
+    border: none;
+    margin-bottom: 2em;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(19, 19, 19);
+    color: white;
+}
+
+
+/*second card*/
+
+.card2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: .5em solid black;
+    border-radius: 1em;
+    width: 18em;
+    height: 32em;
+    background: white;
+    padding: .4em;
+    margin: 2em 2em;
+    box-shadow: 1.5em 3em .7em silver;
+}
+
+.card2.top p,
+.card2 i,
+.card2 .left,
+.card2 h3 {
+    color: grey;
+}
+
+.card2 .nombre i {
+    font-size: 4em;
+}
+
+.card2 .nombre {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(39, 38, 38);
+    text-align: center;
+}
+
+
+/*Registro*/
+
+.card2 .sign {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.card2 .name {
+    margin: .5em;
+}
+
+.card2 .password {
+    margin: .5em;
+}
+
+
+/*Loggin*/
+
+.card2 .login {
+    background: black;
+    box-shadow: 3px 3px 5px rgb(43, 33, 33);
+    text-transform: capitalize;
+    border: .5em solid black;
+    border-radius: .5em;
+    margin: .5em 1em;
+    transition: all 500ms;
+    font-size: .6em;
+    padding: .3em 1.5em;
+}
+
+
+/*crear nueva cuenta*/
+
+.card2 .login2 p {
+    text-transform: capitalize;
+    font-size: .5em;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    margin: 1em;
+    color: black;
+}
+
+
+/*Forget you password?*/
+
+.card2 .forgot-pass p {
+    text-transform: capitalize;
+    font-size: .5em;
+    letter-spacing: .2em;
+    margin: 5em 0 0 0;
+    color: rgb(54, 52, 52);
+    cursor: pointer;
+}
+
+.card2 input {
+    font-size: .7em;
+    padding: .2em 0 .2em .2em;
+    color: black;
+}
+
+
+/*third card*/
+
+.card3 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: .5em solid black;
+    border-radius: 1em;
+    width: 18em;
+    height: 32em;
+    background: white;
+    padding: .4em;
+    box-shadow: 1.5em 3em .7em silver;
+}
+
+.card3.top p,
+.card3 i,
+.card3 .left,
+.card3 h1 {
+    color: grey;
+}
+
+.card3.top {
+    flex: 1;
+}
+
+.card3 .nombre i {
+    font-size: 4em;
+}
+
+
+/*SeatherShop*/
+
+.card3 .nombre {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(39, 38, 38);
+    flex: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Loggin*/
+
+.card3 .login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+
+.card3 button {
+    background: black;
+    box-shadow: 3px 3px 5px rgb(43, 33, 33);
+    border: .5em solid black;
+    border-radius: .5em;
+    margin: .5em 1em;
+    font-size: .6em;
+    padding: .3em 1.5em;
+    margin-bottom: 2em;
+}
